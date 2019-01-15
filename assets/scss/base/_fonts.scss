@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+@mixin PoppinsReg {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+@mixin PoppinsMedium {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+@mixin PoppinsBold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+}

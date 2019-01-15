@@ -1,0 +1,120 @@
+.default-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: rem(20) 0;
+  background-color: $white;
+  box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+  z-index: 5;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .header-menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  &__nav {
+    display: inline-block;
+    margin-right: rem(70);
+    text-transform: uppercase;
+    a {
+      position: relative;
+      display: inline-block;
+      color: $black;
+      @include font(14);
+      @include PoppinsMedium;
+      margin: 0 rem(25);
+      transition: 0.3s ease;
+      &:hover {
+        color: $blue;
+      }
+    }
+    a:after {
+      background-color: $blue;
+      display: block;
+      content: "";
+      height: 2px;
+      width: 0%;
+      left:50%;
+      position:absolute;
+      -webkit-transition: width .3s ease-in-out;
+      -moz--transition: width .3s ease-in-out;
+      transition: width .3s ease-in-out;
+      -webkit-transform:translateX(-50%);
+      -moz-transform:translateX(-50%);
+      transform:translateX(-50%);
+    }
+    a:hover:after,
+    a:focus:after {
+      width: 100%;
+    }
+    @media (max-width: $smallTablet) {
+      position: absolute;
+      margin-right: 0;
+      padding: rem(10) 0;
+      right: rem(-30);
+      top: 36px;
+      text-align: right;
+      background-color: $white;
+      box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+      a {
+        margin: 0 rem(30);
+        padding-bottom: rem(20);
+      }
+    }
+    @media (max-width: $bigPhone) {
+      right: rem(-20);
+      a {
+        margin: 0 rem(20);
+      }
+    }
+  }
+}
+.header__control {
+  position: relative;
+  cursor: pointer;
+  &_open, &_close {
+    position: absolute;
+    top: rem(-10);
+    right: 0;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  &_open {
+    width: rem(24);
+    height: rem(24);
+    transform: scale(1);
+    transition: transform 0.3s;
+    &.show {
+      opacity: 1;
+    }
+    &.hide {
+      opacity: 0;
+      transform: scale(0);
+    }
+  }
+  &_close {
+    width: rem(20);
+    height: rem(20);
+    opacity: 0;
+    transform: scale(0);
+    &.show {
+      opacity: 1;
+      transform: scale(1);
+      transition: transform 0.3s;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+    &.hide {
+      opacity: 0;
+      transform: scale(0);
+      transition: transform 0.3s;
+    }
+  }
+}

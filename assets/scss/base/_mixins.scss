@@ -1,0 +1,41 @@
+// MIXINS
+
+// Font size to rem
+@mixin font ($size) {
+  font-size: $size + px;
+  font-size: ($size/$font-size) + rem;
+}
+// FUNCTIONS
+@function rem($val) {
+  @return #{$val / $font-size}rem;
+}
+
+// Standart svg-load background style
+@mixin standart-bg() {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+// Pixels to vw
+@function vw($val) {
+  @return #{$val / $body-width * 100}vw;
+}
+// Pixels to vh
+@function vh($val) {
+  @return #{$val / $body-height * 100}vh;
+}
+
+$col-width: 72;
+$col-indent: 16;
+
+@function col($count, $all) {
+  @return #{($count * $col-width + ($count - 1) * $col-indent) / (($col-width + $col-indent) * $all - $col-indent) * 100%};
+}
+
+$mob-col-width: 55;
+$mob-col-indent: 20;
+
+@function colMob($count, $all) {
+  @return #{($count * $mob-col-width + ($count - 1) * $mob-col-indent) / (($mob-col-width + $mob-col-indent) * $all - $mob-col-indent) * 100%};
+}
+
