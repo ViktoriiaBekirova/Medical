@@ -19,7 +19,21 @@ body {
   text-size-adjust: 100%;
   -webkit-overflow-scrolling: touch;
 }
-
+h1 {
+  @include font(45);
+  @include PoppinsBold;
+  line-height: 1.2;
+  color: #222222;
+  @media (max-width: $bigPhone) {
+    @include font(35)
+  }
+}
+p {
+  @include font(16);
+  @include PoppinsReg;
+  line-height: 1.5;
+  color: #777;
+}
 .wrapper {
   position: relative;
   max-width: rem(1280);
