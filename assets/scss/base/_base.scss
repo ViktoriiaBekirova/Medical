@@ -28,6 +28,12 @@ h1 {
     @include font(35)
   }
 }
+h4 {
+  @include font(18);
+  @include PoppinsBold;
+  line-height: 1.2;
+  color: #222222;
+}
 p {
   @include font(16);
   @include PoppinsReg;

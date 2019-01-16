@@ -1,0 +1,57 @@
+.services {
+  position: relative;
+  padding: rem(120) 0;
+  @media (max-width: $bigPhone) {
+    padding: rem(50) 0;
+  }
+}
+.services-content {
+  display: flex;
+  margin-bottom: rem(30);
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &__icon {
+    margin-right: rem(20);
+    span {
+      @include font(40);
+      font-weight: 300;
+    }
+    .lnr-rocket {
+      &:before {
+        content: "\e84b";;
+      }
+    }
+    .lnr-chart-bars {
+      &:before {
+        content: "\e843";
+      }
+    }
+    .lnr-bug {
+      &:before {
+        content: "\e869";
+      }
+    }
+    .lnr-heart-pulse {
+      &:before {
+        content: "\e840";
+      }
+    }
+    .lnr-paw {
+      &:before {
+        content: "\e84a";
+      }
+    }
+    .lnr-bug {
+      &:before {
+        content: "\e82b";
+      }
+    }
+  }
+  &__text {
+    h4 {
+      margin-bottom: rem(12);
+      text-transform: uppercase;
+    }
+  }
+}

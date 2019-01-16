@@ -3,7 +3,8 @@
   width: 100vw;
   min-height: 100vh;
   height: auto;
-  padding-top: rem(73);
+  margin-top: rem(73);
+  background-color: #f9f9ff;
   @media (max-width: $smallTablet) {
     display: flex;
     align-items: flex-end;
@@ -75,6 +76,7 @@
     line-height: 42px;
     padding-left: 30px;
     padding-right: 60px;
+    margin-bottom: rem(40);
     border-radius: 25px;
     background: #222222;
     border: none;
@@ -89,7 +91,7 @@
       width: rem(30);
       height: rem(20);
       top: rem(14);
-      left: rem(115);
+      left: rem(118);
       background-image: url("/img/button-icon.svg");
       background-repeat: no-repeat;
       transition: all 0.3s ease 0s;
@@ -103,7 +105,7 @@
 }
 .main-image {
   position: absolute;
-  top: rem(73);
+  top: 0;
   right: 0;
   display: flex;
   justify-content: flex-start;
