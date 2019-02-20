@@ -1,0 +1,34 @@
+[
+  {
+    "header": "Andy Florence",
+    "text": "inappropriate behavior 1",
+    "img": {
+      "src": "/img/c1.jpg",
+      "alt": "consultant"
+    }
+  },
+  {
+    "header": "Nina Smith",
+    "text": "inappropriate behavior 2",
+    "img": {
+      "src": "/img/c2.jpg",
+      "alt": "consultant"
+    }
+  },
+  {
+    "header": "Andy Williams",
+    "text": "inappropriate behavior 3",
+    "img": {
+      "src": "/img/c3.jpg",
+      "alt": "consultant"
+    }
+  },
+  {
+    "header": "Angelina Taylor",
+    "text": "inappropriate behavior 4",
+    "img": {
+      "src": "/img/c4.jpg",
+      "alt": "consultant"
+    }
+  }
+]

@@ -3,18 +3,18 @@
         <div class="wrapper">
             <div class="header">
                 <div class="header__logo">
-                    <nuxt-link to="/">
+                    <a href="#home" @click="closeMenu">
                         <img src="/img/logo.png" alt="logo">
-                    </nuxt-link>
+                    </a>
                 </div>
                 <div class="header-menu">
                     <transition name="slide-fade">
                         <div class="header__nav" v-if="menu">
                             <nav>
-                                <nuxt-link to="/">home</nuxt-link>
-                                <nuxt-link to="/">services</nuxt-link>
-                                <nuxt-link to="/">appoinment</nuxt-link>
-                                <nuxt-link to="/">consultants</nuxt-link>
+                                <a href="#home" @click="closeMenu">home</a>
+                                <a href="#services" @click="closeMenu">services</a>
+                                <a href="#appoinment" @click="closeMenu">appoinment</a>
+                                <a href="#consultants" @click="closeMenu">consultants</a>
                             </nav>
                         </div>
                     </transition>

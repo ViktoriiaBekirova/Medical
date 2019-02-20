@@ -1,8 +1,8 @@
 <template>
     <div>
         <v-header />
-        <div class="container">
-            <div class="container__content">
+        <div class="container" ref="container">
+            <div class="container__content" id="home">
                 <nuxt/>
             </div>
             <div class="container__footer">
@@ -28,8 +28,10 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        min-height: 100vh;
+        height: 100vh;
         width: 100vw;
+        overflow: scroll;
+        scroll-behavior: smooth;
         &__content {
             flex: 1 0 auto;
         }

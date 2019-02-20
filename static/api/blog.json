@@ -1,0 +1,50 @@
+[
+  {
+    "header": "Portable Fashion for young women",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea.commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "img": {
+      "src": "/img/b1.jpg",
+      "alt": "blog"
+    },
+    "img_person": {
+      "src": "/img/user.png",
+      "alt": "person"
+    },
+    "name": "Mark Wiens 1",
+    "data": "13th Dec",
+    "like": "15",
+    "comment": "04"
+  },
+  {
+    "header": "Summer ware are coming",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea.commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "img": {
+      "src": "/img/b2.jpg",
+      "alt": "blog"
+    },
+    "img_person": {
+      "src": "/img/user.png",
+      "alt": "person"
+    },
+    "name": "Mark Wiens 2",
+    "data": "13th Dec",
+    "like": "4",
+    "comment": "02"
+  },
+  {
+    "header": "Portable Fashion for young women",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea.commodo consequat.",
+    "img": {
+      "src": "/img/b3.jpg",
+      "alt": "blog"
+    },
+    "img_person": {
+      "src": "/img/user.png",
+      "alt": "person"
+    },
+    "name": "Mark Wiens 3",
+    "data": "19th Dec",
+    "like": "20",
+    "comment": "05"
+  }
+]

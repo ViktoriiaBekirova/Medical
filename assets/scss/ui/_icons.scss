@@ -1,0 +1,45 @@
+.socials {
+  display: flex;
+  align-items: center;
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: rem(30);
+    height: rem(30);
+    margin-right: rem(8);
+    background: $black;
+    &:last-child {
+      margin-right: 0;
+    }
+    a:hover {
+      opacity: 0.6;
+    }
+    .facebook {
+      width: rem(8);
+      height: rem(16);
+      background-image: svg-load('../svg/social/facebook.svg');
+      background-size: cover;
+    }
+    .twitter {
+      width: rem(16);
+      height: rem(13);
+      background-image: svg-load('../svg/social/twitter.svg');
+      background-size: cover;
+    }
+    .instagram {
+      width: rem(16);
+      height: rem(16);
+      background-image: svg-load('../svg/social/instagram.svg');
+      background-size: cover;
+    }
+    .tumblr {
+      width: rem(9);
+      height: rem(16);
+      background-image: svg-load('../svg/social/tumblr.svg');
+      background-size: cover;
+    }
+  }
+}
+
+

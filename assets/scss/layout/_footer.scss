@@ -1,0 +1,52 @@
+.footer {
+  display: flex;
+  padding: rem(100) 0;
+  background-color: #222222;
+  @media (max-width: $bigPhone) {
+    padding: rem(60) 0;
+  }
+  &__products,&__contact, &__newsletter {
+    padding: 0 rem(10);
+    &_header {
+      color: $white;
+      margin-bottom: rem(25);
+      font-size: rem(16);
+      font-weight: 600;
+    }
+    &_nav li a{
+      margin-top: rem(8);
+      font-size: rem(12);
+      font-weight: 300;
+      line-height: 1.625em;
+      color: #777;
+    }
+    &_text {
+      margin-bottom: rem(14);
+      font-size: rem(12);
+      font-weight: 300;
+      line-height: 1.625em;
+      color: #777;
+    }
+    &_tell {
+      background: -webkit-linear-gradient(0deg, #2380ff 0%, #52fdd9 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: rem(80);
+    @media (max-width: $bigPhone) {
+      padding-top: rem(60);
+    }
+    p {
+      margin-bottom: rem(15);
+      margin-right: rem(15);
+      font-size: rem(12);
+      font-weight: 300;
+    }
+  }
+}

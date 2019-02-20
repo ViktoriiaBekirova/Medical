@@ -28,6 +28,18 @@ h1 {
     @include font(35)
   }
 }
+h2 {
+  @include font(36);
+  @include PoppinsBold;
+  line-height: 1.2;
+  color: #222222;
+}
+h3 {
+  @include font(22);
+  @include PoppinsBold;
+  line-height: 1.2;
+  color: #222222;
+}
 h4 {
   @include font(18);
   @include PoppinsBold;
@@ -39,6 +51,10 @@ p {
   @include PoppinsReg;
   line-height: 1.5;
   color: #777;
+}
+span {
+  @include font(11);
+  @include PoppinsReg;
 }
 .wrapper {
   position: relative;

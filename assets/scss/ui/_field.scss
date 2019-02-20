@@ -1,0 +1,104 @@
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  width: 100%;
+  font-family: $font-family;
+  @include font(16);
+  letter-spacing: normal;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background: none;
+  box-shadow: none;
+  color: $white;
+  &:focus {
+    color: $white;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+.field,
+.textarea {
+  position: relative;
+  max-width: 100%;
+  height: rem(40);
+  transition: all 0.2s ease;
+  &__label {
+    position: absolute;
+    top: 50%;
+    @include font(16);
+    font-weight: normal;
+    color: $gray;
+    transform: translate(0, -50%);
+    transform-origin: left center;
+    white-space: nowrap;
+    cursor: text;
+    transition: all 0.2s ease;
+    &-text {
+      pointer-events: none;
+    }
+  }
+  &__input {
+    padding: 0 rem(4) 0 0;
+    line-height: rem(40);
+  }
+  &.is-filled {
+    .field__label,
+    .textarea__label {
+      color: $gray;
+      top: rem(-8);
+      transform: scale(0.625) translate(0.05rem, 0);
+    }
+  }
+  &.is-focus {
+    .field__label,
+    .textarea__label {
+      color: $gray;
+      top: rem(-8);
+      transform: scale(0.625) translate(0.05rem, 0);
+    }
+  }
+  &.error {
+    .field__input {
+      border-color: #ff8080!important;
+    }
+  }
+}
+
+.textarea {
+  width: calc(100% - 24px);
+  height: 100%;
+  padding-top: rem(10);
+  &__field {
+    width: calc(100% + 24px);
+    height: 100%;
+    padding: 0 0 rem(23);
+    @media (max-width: 340px) {
+      width: 100%;
+    }
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: rgba($gray, 0.1);
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $gray;
+    }
+  }
+  &__label {
+    top: rem(10);
+    transform: none;
+  }
+}
+.error-text {
+  margin-top: rem(4);
+  @include font(11);
+  line-height: 1.45;
+  color: #ff8080;
+}

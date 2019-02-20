@@ -1,0 +1,51 @@
+.main-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+.form-application {
+  margin-bottom: rem(16);
+  &__data {
+    padding: rem(20);
+    background-color: #222;
+    border: 1px solid $gray;
+    box-shadow: 0 0 15px 0 rgba(88, 95, 105, 0.1);
+    .input-form {
+      margin-bottom: rem(24);
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &.footer-email {
+      padding: 0 rem(7);
+      border: none;
+      border-bottom: 1px solid $gray;
+    }
+  }
+  &__comment {
+    height: 100%;
+    padding: rem(20);
+    background-color: #222;
+    border: 1px solid $gray;
+    box-shadow: 0 0 15px 0 rgba(88, 95, 105, 0.1);
+  }
+}
+.form-button {
+  padding: rem(20) 0;
+}
+
+.application-form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: rem(40) rem(10);
+  background: transparent;
+  h3 {
+    padding-bottom: rem(20);
+    color: $white;
+    line-height: 1.5;
+  }
+}
+

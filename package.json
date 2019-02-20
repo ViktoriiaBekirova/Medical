@@ -13,7 +13,14 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "animated-number-vue": "^0.1.4",
+    "axios": "^0.18.0",
+    "nuxt": "^2.0.0",
+    "postcss-inline-svg": "^3.1.1",
+    "postcss-svgo": "^4.0.2",
+    "v-mask": "^1.3.3",
+    "vee-validate": "^2.1.0-beta.9",
+    "vue-focus": "^2.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",

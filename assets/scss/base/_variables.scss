@@ -2,6 +2,7 @@
 $white: #fff;
 $black: #000;
 $blue: #2482ff;
+$gray: #656463;
 
 /* Typography */
 $font-family: 'Poppins', sans-serif;
@@ -13,6 +14,7 @@ $line-height-base: 1.5;
 $extraSmall: 340px;
 $smallPhone: 400px;
 $bigPhone: 480px;
+$mobile: 600px;
 $smallTablet: 768px;
 $bigTablet: 1024px;
 $smallDesktop: 1280px;
@@ -20,6 +22,3 @@ $middleDesktop: 1366px;
 $bigDesktop: 1440px;
 $largeDesktop: 1600px;
 $extraDesktop: 1900px;
-
-$body-width: 1280;
-$body-height: 640;
