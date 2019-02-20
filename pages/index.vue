@@ -183,7 +183,7 @@
     <section class="blogs">
       <div class="wrapper">
         <div class="blogs__text">
-          <h2><a href="#">Our Recent Blogs</a></h2>
+          <h2>Our Recent Blogs</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut  labore  et dolore magna aliqua.
           </p>
